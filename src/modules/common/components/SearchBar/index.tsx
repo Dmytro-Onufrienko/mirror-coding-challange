@@ -1,14 +1,14 @@
 "use client";
 
 import { FC } from "react";
-import { Solicitation } from "./data";
+import { IBid } from "./data";
 import { Button } from "@modules/common/ui/button";
 import { Input } from "@modules/common/ui/input";
-import Spinner from "../Spiner";
+import Spinner from "../Spinner";
 import { useLogic } from "./useLogic";
 
 interface ISearchBarProps {
-  onSearch: (data: Solicitation[]) => void;
+  onSearch: (data: IBid[]) => void;
 }
 
 const SearchBar: FC<ISearchBarProps> = ({ onSearch }) => {

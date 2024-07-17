@@ -16,17 +16,17 @@ import {
 } from "@tanstack/react-table";
 import BidDetailsModal from "@/modules/bid/components/BidModal";
 import {
-  Solicitation,
+  IBid,
   solicitationsColumns,
 } from "@/modules/common/components/SearchBar/data";
 import { Button } from "@/modules/common/ui/button";
 
 interface IBidTableProps {
-  bids: Solicitation[];
+  bids: IBid[];
 }
 
 const BidTable: FC<IBidTableProps> = ({ bids }) => {
-  const table = useReactTable<Solicitation>({
+  const table = useReactTable<IBid>({
     data: bids,
     columns: solicitationsColumns,
     getCoreRowModel: getCoreRowModel(),

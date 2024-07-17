@@ -1,5 +1,5 @@
 import { Button } from "@/modules/common/ui/button";
-import { Solicitation } from "@/modules/common/components/SearchBar/data";
+import { IBid } from "@/modules/common/components/SearchBar/data";
 import {
   DialogHeader,
   DialogFooter,
@@ -13,7 +13,7 @@ import { FC, ReactNode } from "react";
 
 interface IBidDetailsModalProps {
   trigger: ReactNode;
-  content: Solicitation;
+  content: IBid;
 }
 
 const BidDetailsModal: FC<IBidDetailsModalProps> = ({ trigger, content }) => {

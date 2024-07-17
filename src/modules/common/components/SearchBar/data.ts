@@ -1,6 +1,6 @@
 import { ColumnDef } from "@tanstack/react-table";
 
-export type Solicitation = {
+export interface IBid {
   id: string;
   title: string;
   dueDate: string;
@@ -8,9 +8,9 @@ export type Solicitation = {
   mainCategory: string;
   solicitationType: string;
   attachments: string[];
-};
+}
 
-export const solicitationsColumns: ColumnDef<Solicitation>[] = [
+export const solicitationsColumns: ColumnDef<IBid>[] = [
   {
     accessorKey: "id",
     header: "Id",
@@ -41,7 +41,7 @@ export const solicitationsColumns: ColumnDef<Solicitation>[] = [
   },
 ];
 
-export const solicitations: Solicitation[] = [
+export const solicitations: IBid[] = [
   {
     title: "Marketing Services 1",
     id: "10000",
